@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan R. Oliveira</title>
+    <link rel="shortcut icon" href="img/icon2.png" type="image/x-icon"><!--ICON-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');/*JetBrains Mono*/
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');/*righteous*/
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');/*sarala*/
+
+        :root{
+            --blue: #002855;
+            --aqua: rgb(91, 158, 158);
+            --darkBlue: #0F2040;
+            --text: "Sarala", sans-serif;
+            --title: "Righteous",  sans-serif;
+            --component: "JetBrains Mono", sans-serif;
+}
+        body{
+            height: 100vh;
+            background-image: linear-gradient(to top, var(--darkBlue), var(--blue));
+            background-repeat: no-repeat;
+            overflow-y: hidden;
+        }
+        .flex{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 2.5rem;
+            color: var(--aqua);
+            font-family: var(--title);
+            text-shadow: 2px 5px 5px black;
+        }
+        p{
+            font-size: 1.2rem;
+            color: white;
+            font-family: var(--text);
+            text-shadow: 1px 3px 3px black;
+        }
+        a{
+            color: var(--aqua);
+            text-decoration: none;
+            font-family: var(--component);
+            text-shadow: 2px 2px 2px black;
+        }
+
+        @media(min-width: 768px){
+            p{
+                text-align: center;
+            }
+            a{
+                font-size: 1.4rem;
+            }
+        }
+
+        @media(min-width: 320px) and (max-width: 767px){
+            h1{
+                font-size: 2.2rem;
+            }
+            p{
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <h1>Your email has been sent!&#128513</h1>
+        <p>Thank you very much! I will return your message soon, take care of your email spam folder!</p>
+        <a href="index.html">&#129044; Return to page</a>
+    </div>
+</body>
+</html>
